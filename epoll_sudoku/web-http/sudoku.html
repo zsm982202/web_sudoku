@@ -1,0 +1,35 @@
+<HTML>
+<meta http-equiv="content-Type" content="text/html; charset=utf8">
+<TITLE>Index</TITLE>
+<style type="text/css">
+  #grid {
+    text-align: center;
+    width: 40;
+    height: 40;
+  }
+  #submit {
+	text-align: center;
+    margin: 0 auto;
+    height: 40px;
+	width: 80px;
+  }
+</style>
+<BODY>
+<FORM METHOD="get">
+<table border="0" align="center" cellspacing="1" cellpadding="1">
+<script type="text/javascript">
+  for(var i = 0;i < 9;i++) {
+    document.write("<tr>");
+    for(var j = 0;j < 9;j++) {
+      document.write("<td><input id=\"grid\" name=\"s" + (9*i+j) + "\"/></td>");
+    }
+    document.write("</tr>");
+  }
+</script>
+</table>
+<div id="submit">
+  <input TYPE="submit" id="submit" value="calculate">
+</div>
+</FORM>
+</BODY>
+</HTML>
